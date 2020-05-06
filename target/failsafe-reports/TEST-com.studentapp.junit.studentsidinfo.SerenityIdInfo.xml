@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.studentapp.junit.studentsidinfo.SerenityIdInfo" time="11.314" tests="7" errors="2" skipped="3" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_251\bin"/>
+    <property name="java.vm.version" value="25.251-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\00-Eclipse-Tool\Eclipse-Jee-Workspace\Udemy_Learnings\StudentApp_Serenity"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\00-Eclipse-Tool\Eclipse-Jee-Workspace\Udemy_Learnings\StudentApp_Serenity"/>
+    <property name="java.runtime.version" value="1.8.0_251-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_251\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\JhanwarM\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\00-Eclipse-Tool\Eclipse-Jee-Workspace\Udemy_Learnings\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4508522121848934043.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_251\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_251/bin/server;C:/Program Files/Java/jre1.8.0_251/bin;C:/Program Files/Java/jre1.8.0_251/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_241\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\nodejs\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Notepad++;D:\DevOps Tools\Apache-Maven-3.6.3\bin;C:\Program Files\Git\bin;C:\Program Files\Git\usr\bin;C:\Users\JhanwarM\AppData\Local\Microsoft\WindowsApps;C:\Users\JhanwarM\AppData\Roaming\npm;;D:\00-Eclipse-Tool\Eclipse-Jee;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\JhanwarM"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="JhanwarM"/>
+    <property name="java.class.path" value="D:\00-Eclipse-Tool\Eclipse-Jee\plugins\org.eclipse.m2e.maven.runtime_1.15.0.20200310-1832\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_251"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean verify serenity:aggregate"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_251"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_251\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_251\lib\resources.jar;C:\Program Files\Java\jre1.8.0_251\lib\rt.jar;C:\Program Files\Java\jre1.8.0_251\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_251\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_251\lib\jce.jar;C:\Program Files\Java\jre1.8.0_251\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_251\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_251\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\00-Eclipse-Tool\Eclipse-Jee-Workspace\Udemy_Learnings\StudentApp_Serenity\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="thisIsAFailingTest" classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" time="9.691">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;500&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <500> but was <200>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.studentapp.junit.studentsidinfo.SerenityIdInfo.thisIsAFailingTest(SerenityIdInfo.java:46)
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 200 
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Wed, 06 May 2020 05:55:03 GMT
+
+[
+    {
+        "id": 1,
+        "firstName": "Vernon",
+        "lastName": "Harper",
+        "email": "egestas.rhoncus.Proin@massaQuisqueporttitor.org",
+        "programme": "Financial Analysis",
+        "courses": [
+            "Accounting",
+            "Statistics"
+        ]
+    },
+    {
+        "id": 2,
+        "firstName": "Murphy",
+        "lastName": "Holmes",
+        "email": "faucibus.orci.luctus@Duisac.net",
+        "programme": "Financial Analysis",
+        "courses": [
+            "Accounting",
+            "Statistics"
+        ]
+    },
+    {
+        "id": 3,
+        "firstName": "Reece",
+        "lastName": "Jason",
+        "email": "tincidunt.dui@ultricessit.co.uk",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 4,
+        "firstName": "Orson",
+        "lastName": "Armando",
+        "email": "nascetur@conguea.com",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 5,
+        "firstName": "Cullen",
+        "lastName": "Craig",
+        "email": "imperdiet.ullamcorper@nonenimMauris.co.uk",
+        "programme": "Disaster Management",
+        "courses": [
+            "Disaster Preparedness"
+        ]
+    },
+    {
+        "id": 6,
+        "firstName": "Harper",
+        "lastName": "Rashad",
+        "email": "vestibulum@ridiculusmus.edu",
+        "programme": "Disaster Management",
+        "courses": [
+            "Disaster Preparedness"
+        ]
+    },
+    {
+        "id": 7,
+        "firstName": "Roth",
+        "lastName": "Grant",
+        "email": "eu.tellus@anuncIn.edu",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 8,
+        "firstName": "Jermaine",
+        "lastName": "Alden",
+        "email": "scelerisque.sed@senectuset.org",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 9,
+        "firstName": "Sebastian",
+        "lastName": "Jesse",
+        "email": "faucibus@sed.co.uk",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 10,
+        "firstName": "Todd",
+        "lastName": "Beck",
+        "email": "Fusce.dolor.quam@commodoauctor.org",
+        "programme": "Financial Analysis",
+        "courses": [
+            "Accounting",
+            "Statistics"
+        ]
+    },
+    {
+        "id": 11,
+        "firstName": "Giacomo",
+        "lastName": "Raphael",
+        "email": "magnis.dis@idmagnaet.com",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 12,
+        "firstName": "Chadwick",
+        "lastName": "Lawrence",
+        "email": "turpis.non.enim@sociisnatoque.com",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 13,
+        "firstName": "Zachary",
+        "lastName": "Vance",
+        "email": "In.tincidunt.congue@Quisque.com",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 14,
+        "firstName": "Denton",
+        "lastName": "Walker",
+        "email": "Integer.sem@iaculisodioNam.edu",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 15,
+        "firstName": "Hakeem",
+        "lastName": "Fitzgerald",
+        "email": "accumsan@luctuset.edu",
+        "programme": "Financial Analysis",
+        "courses": [
+            "Accounting",
+            "Statistics"
+        ]
+    },
+    {
+        "id": 16,
+        "firstName": "Jakeem",
+        "lastName": "Philip",
+        "email": "montes.nascetur.ridiculus@loremDonec.com",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 17,
+        "firstName": "Amal",
+        "lastName": "Emery",
+        "email": "turpis.egestas.Aliquam@fermentum.net",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 18,
+        "firstName": "Reed",
+        "lastName": "Wylie",
+        "email": "Suspendisse.aliquet.sem@atrisus.org",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 19,
+        "firstName": "Lev",
+        "lastName": "Philip",
+        "email": "dolor.elit.pellentesque@enimEtiamimperdiet.ca",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 20,
+        "firstName": "Lamar",
+        "lastName": "Berk",
+        "email": "leo.Vivamus@sit.org",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 21,
+        "firstName": "Nathaniel",
+        "lastName": "Colton",
+        "email": "hendrerit@et.co.uk",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 22,
+        "firstName": "Kennan",
+        "lastName": "Jacob",
+        "email": "vel.vulputate@vitaedolorDonec.ca",
+        "programme": "Financial Analysis",
+        "courses": [
+            "Accounting",
+            "Statistics"
+        ]
+    },
+    {
+        "id": 23,
+        "firstName": "Omar",
+        "lastName": "Colt",
+        "email": "venenatis.a@Pellentesque.co.uk",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 24,
+        "firstName": "Tanek",
+        "lastName": "Scott",
+        "email": "Sed.malesuada@porttitoreros.ca",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 25,
+        "firstName": "Paki",
+        "lastName": "Samson",
+        "email": "ornare@Mauriseuturpis.edu",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 26,
+        "firstName": "James",
+        "lastName": "Jonah",
+        "email": "Nullam@Cras.net",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 27,
+        "firstName": "Cade",
+        "lastName": "Vernon",
+        "email": "pharetra.sed@Aliquamvulputateullamcorper.ca",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 28,
+        "firstName": "Quentin",
+        "lastName": "Chadwick",
+        "email": "sed.turpis.nec@risusQuisque.ca",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 29,
+        "firstName": "Arden",
+        "lastName": "Abel",
+        "email": "consequat.enim@ultricessit.com",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 30,
+        "firstName": "Lars",
+        "lastName": "Keith",
+        "email": "Fusce@Quisquefringillaeuismod.org",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 31,
+        "firstName": "Emmanuel",
+        "lastName": "Gavin",
+        "email": "ornare.libero@perinceptoshymenaeos.co.uk",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 32,
+        "firstName": "Noah",
+        "lastName": "Oren",
+        "email": "Proin.vel@placerat.org",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 33,
+        "firstName": "Mason",
+        "lastName": "Barry",
+        "email": "id@incursus.co.uk",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 34,
+        "firstName": "Elliott",
+        "lastName": "Brady",
+        "email": "Vestibulum@adlitora.net",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 35,
+        "firstName": "Nero",
+        "lastName": "Brett",
+        "email": "amet.ante@sit.com",
+        "programme": "Disaster Management",
+        "courses": [
+            "Disaster Preparedness"
+        ]
+    },
+    {
+        "id": 36,
+        "firstName": "Elvis",
+        "lastName": "Abraham",
+        "email": "neque@interdumfeugiat.net",
+        "programme": "Disaster Management",
+        "courses": [
+            "Disaster Preparedness"
+        ]
+    },
+    {
+        "id": 37,
+        "firstName": "Kieran",
+        "lastName": "Ross",
+        "email": "magnis.dis.parturient@laciniaorci.edu",
+        "programme": "Disaster Management",
+        "courses": [
+            "Disaster Preparedness"
+        ]
+    },
+    {
+        "id": 38,
+        "firstName": "Noah",
+        "lastName": "Merrill",
+        "email": "et@ipsum.net",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 39,
+        "firstName": "Peter",
+        "lastName": "Noble",
+        "email": "turpis@sagittisplaceratCras.ca",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 40,
+        "firstName": "Axel",
+        "lastName": "Bradley",
+        "email": "ridiculus.mus@tempus.net",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 41,
+        "firstName": "Hashim",
+        "lastName": "Chancellor",
+        "email": "at.pretium@eleifendvitae.net",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 42,
+        "firstName": "Alan",
+        "lastName": "Connor",
+        "email": "vel.turpis.Aliquam@metus.org",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 43,
+        "firstName": "Abel",
+        "lastName": "Rudyard",
+        "email": "orci.luctus.et@posuere.com",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 44,
+        "firstName": "Cedric",
+        "lastName": "Zeus",
+        "email": "Quisque.tincidunt@nullaanteiaculis.co.uk",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 45,
+        "firstName": "Boris",
+        "lastName": "Kato",
+        "email": "dictum@tortorInteger.org",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 46,
+        "firstName": "Walter",
+        "lastName": "Phelan",
+        "email": "diam@nectellusNunc.edu",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 47,
+        "firstName": "Preston",
+        "lastName": "Branden",
+        "email": "sagittis.semper@urnaNullam.net",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 48,
+        "firstName": "Kane",
+        "lastName": "Alec",
+        "email": "dignissim.Maecenas.ornare@adui.edu",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 49,
+        "firstName": "Igor",
+        "lastName": "Ezra",
+        "email": "cursus.non.egestas@laciniaorci.net",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 50,
+        "firstName": "Yoshio",
+        "lastName": "Kato",
+        "email": "Vivamus.rhoncus@semutcursus.ca",
+        "programme": "Disaster Management",
+        "courses": [
+            "Disaster Preparedness"
+        ]
+    },
+    {
+        "id": 51,
+        "firstName": "Fletcher",
+        "lastName": "Vance",
+        "email": "orci.lacus@hendreritDonecporttitor.net",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 52,
+        "firstName": "Burton",
+        "lastName": "Merrill",
+        "email": "mauris@malesuada.ca",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 53,
+        "firstName": "Rafael",
+        "lastName": "Vladimir",
+        "email": "mauris.ipsum.porta@sit.ca",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 54,
+        "firstName": "Dolan",
+        "lastName": "Hyatt",
+        "email": "augue.malesuada@Pellentesqueut.net",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 55,
+        "firstName": "Driscoll",
+        "lastName": "Russell",
+        "email": "Lorem.ipsum.dolor@eu.co.uk",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 56,
+        "firstName": "Boris",
+        "lastName": "Dexter",
+        "email": "purus@mollis.co.uk",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 57,
+        "firstName": "Maxwell",
+        "lastName": "Tarik",
+        "email": "pharetra.Quisque.ac@facilisisSuspendisse.edu",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 58,
+        "firstName": "Nero",
+        "lastName": "Ulysses",
+        "email": "inceptos.hymenaeos.Mauris@Proin.edu",
+        "programme": "Financial Analysis",
+        "courses": [
+            "Accounting",
+            "Statistics"
+        ]
+    },
+    {
+        "id": 59,
+        "firstName": "Chase",
+        "lastName": "Laith",
+        "email": "ridiculus.mus.Donec@netus.org",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 60,
+        "firstName": "Dominic",
+        "lastName": "Malcolm",
+        "email": "mi.felis.adipiscing@liberoettristique.edu",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 61,
+        "firstName": "Ross",
+        "lastName": "Hedley",
+        "email": "Ut.tincidunt.vehicula@nuncidenim.edu",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 62,
+        "firstName": "Abel",
+        "lastName": "Garrett",
+        "email": "rhoncus@sociisnatoquepenatibus.ca",
+        "programme": "Financial Analysis",
+        "courses": [
+            "Accounting",
+            "Statistics"
+        ]
+    },
+    {
+        "id": 63,
+        "firstName": "Nero",
+        "lastName": "Clarke",
+        "email": "eget.metus.In@disparturientmontes.org",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 64,
+        "firstName": "Thane",
+        "lastName": "Carl",
+        "email": "ut.nulla@netuset.co.uk",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 65,
+        "firstName": "Jerome",
+        "lastName": "Jackson",
+        "email": "ac.turpis@facilisislorem.net",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 66,
+        "firstName": "Tate",
+        "lastName": "Martin",
+        "email": "ante.blandit@semeget.org",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 67,
+        "firstName": "Caldwell",
+        "lastName": "Daniel",
+        "email": "lobortis@nequevenenatislacus.net",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 68,
+        "firstName": "Lucian",
+        "lastName": "Holmes",
+        "email": "Cras@lorem.org",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 69,
+        "firstName": "Akeem",
+        "lastName": "Herrod",
+        "email": "vel.venenatis@Nullamvelit.com",
+        "programme": "Disaster Management",
+        "courses": [
+            "Disaster Preparedness"
+        ]
+    },
+    {
+        "id": 70,
+        "firstName": "Vance",
+        "lastName": "Colin",
+        "email": "quam.vel.sapien@vellectusCum.org",
+        "programme": "Disaster Management",
+        "courses": [
+            "Disaster Preparedness"
+        ]
+    },
+    {
+        "id": 71,
+        "firstName": "Austin",
+        "lastName": "Jelani",
+        "email": "Nulla@nuncid.net",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 72,
+        "firstName": "Jackson",
+        "lastName": "Honorato",
+        "email": "In@vestibulumlorem.com",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 73,
+        "firstName": "Lee",
+        "lastName": "Acton",
+        "email": "rutrum@mattis.org",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 74,
+        "firstName": "Aquila",
+        "lastName": "Sylvester",
+        "email": "Aliquam.ultrices.iaculis@duiquisaccumsan.co.uk",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 75,
+        "firstName": "Baker",
+        "lastName": "Cairo",
+        "email": "fermentum@diam.com",
+        "programme": "Financial Analysis",
+        "courses": [
+            "Accounting",
+            "Statistics"
+        ]
+    },
+    {
+        "id": 76,
+        "firstName": "Samuel",
+        "lastName": "Kibo",
+        "email": "semper@enimcommodohendrerit.co.uk",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 77,
+        "firstName": "Byron",
+        "lastName": "Warren",
+        "email": "enim.Etiam.imperdiet@sitamet.ca",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 78,
+        "firstName": "Declan",
+        "lastName": "Barclay",
+        "email": "Proin.nisl.sem@Aliquamnecenim.org",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 79,
+        "firstName": "Robert",
+        "lastName": "Cullen",
+        "email": "in.dolor@pede.co.uk",
+        "programme": "Disaster Management",
+        "courses": [
+            "Disaster Preparedness"
+        ]
+    },
+    {
+        "id": 80,
+        "firstName": "Troy",
+        "lastName": "Simon",
+        "email": "Cras.vulputate.velit@ornare.org",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 81,
+        "firstName": "Tiger",
+        "lastName": "Wylie",
+        "email": "risus.quis.diam@Proin.ca",
+        "programme": "Disaster Management",
+        "courses": [
+            "Disaster Preparedness"
+        ]
+    },
+    {
+        "id": 82,
+        "firstName": "Herrod",
+        "lastName": "Adam",
+        "email": "hendrerit.neque@a.co.uk",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 83,
+        "firstName": "Yuli",
+        "lastName": "Griffin",
+        "email": "ipsum.non@vitae.co.uk",
+        "programme": "Criminology",
+        "courses": [
+            "Criminal Mind",
+            "Gender, Crime and Justice ",
+            "Philosophy of Law "
+        ]
+    },
+    {
+        "id": 84,
+        "firstName": "Chancellor",
+        "lastName": "Ali",
+        "email": "ultrices@Nullam.net",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 85,
+        "firstName": "Charles",
+        "lastName": "Randall",
+        "email": "ipsum.porta.elit@morbitristique.net",
+        "programme": "Law",
+        "courses": [
+            "Criminal Law",
+            "Constitutional Law",
+            "Property Law",
+            "Contracts"
+        ]
+    },
+    {
+        "id": 86,
+        "firstName": "Lucius",
+        "lastName": "Gage",
+        "email": "auctor.vitae.aliquet@parturient.org",
+        "programme": "Disaster Management",
+        "courses": [
+            "Disaster Preparedness"
+        ]
+    },
+    {
+        "id": 87,
+        "firstName": "Richard",
+        "lastName": "Dane",
+        "email": "Nulla.eget@musDonecdignissim.co.uk",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 88,
+        "firstName": "Addison",
+        "lastName": "Jermaine",
+        "email": "est.Mauris@et.co.uk",
+        "programme": "Disaster Management",
+        "courses": [
+            "Disaster Preparedness"
+        ]
+    },
+    {
+        "id": 89,
+        "firstName": "Acton",
+        "lastName": "Elliott",
+        "email": "sem.eget@posuerecubiliaCurae.ca",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 90,
+        "firstName": "Channing",
+        "lastName": "Howard",
+        "email": "est.congue@velit.com",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 91,
+        "firstName": "Darius",
+        "lastName": "Nehru",
+        "email": "risus.varius.orci@sitamet.edu",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 92,
+        "firstName": "Walter",
+        "lastName": "Arsenio",
+        "email": "a.ultricies@duiFusce.edu",
+        "programme": "Financial Analysis",
+        "courses": [
+            "Accounting",
+            "Statistics"
+        ]
+    },
+    {
+        "id": 93,
+        "firstName": "Dieter",
+        "lastName": "Matthew",
+        "email": "a@pretium.ca",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 94,
+        "firstName": "Evan",
+        "lastName": "Yoshio",
+        "email": "sapien.gravida.non@noncursus.com",
+        "programme": "Financial Analysis",
+        "courses": [
+            "Accounting",
+            "Statistics"
+        ]
+    },
+    {
+        "id": 95,
+        "firstName": "Hamilton",
+        "lastName": "Dennis",
+        "email": "luctus.lobortis@nonbibendumsed.com",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 96,
+        "firstName": "Gavin",
+        "lastName": "Driscoll",
+        "email": "lacinia.mattis@risusDonec.net",
+        "programme": "Medicine",
+        "courses": [
+            "Anatomy",
+            "Biochemistry",
+            "Genetics",
+            "Human Behavior."
+        ]
+    },
+    {
+        "id": 97,
+        "firstName": "Brendan",
+        "lastName": "Allistair",
+        "email": "Nunc.laoreet@Sed.ca",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 98,
+        "firstName": "Gary",
+        "lastName": "Robert",
+        "email": "molestie@vitaesemper.ca",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 99,
+        "firstName": "Fletcher",
+        "lastName": "Brenden",
+        "email": "semper@nequesed.co.uk",
+        "programme": "Computer Science",
+        "courses": [
+            "Calculus",
+            "Algorithms",
+            "Software Development",
+            "Ethics"
+        ]
+    },
+    {
+        "id": 100,
+        "firstName": "Oscar",
+        "lastName": "Barclay",
+        "email": "non.ante.bibendum@risusDonecegestas.edu",
+        "programme": "Mechanical Engineering",
+        "courses": [
+            "Machine Element Design",
+            "Engineering Analysis I",
+            "Calculus & Linear Algebra I "
+        ]
+    },
+    {
+        "id": 101,
+        "firstName": "SMOKEUSER33967_updated",
+        "lastName": "SMOKEUSER77657",
+        "email": "91037xyz@gmail.com",
+        "programme": "Computer Science",
+        "courses": [
+            "JAVA",
+            "C++"
+        ]
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[773 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - &amp#27;[36m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+&amp#27;[0m
+1721 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Serenity id info
+3309 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: thisIsAFailingTest
+-------------------------------------------------------------------
+3310 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 1
+]]></system-err>
+  </testcase>
+  <testcase name="thisIsASkippedTest" classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" time="0">
+    <skipped/>
+    <system-err><![CDATA[12717 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: This is a failing test
+--------------------------------------------------------------------------
+12727 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 1 expectation failed.Expected status code <500> but was <200>.
+13518 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: thisIsASkippedTest
+-------------------------------------------------------------------
+13518 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 2
+13522 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST IGNORED
+13525 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+            __  _____ _____ ____ _____   ____  _  _____ ____  ____  _____ ____  
+  _        / / |_   _| ____/ ___|_   _| / ___|| |/ /_ _|  _ \|  _ \| ____|  _ \ 
+ (_)_____ / /    | | |  _| \___ \ | |   \___ \| ' / | || |_) | |_) |  _| | | | |
+  _|_____/ /     | | | |___ ___) || |    ___) | . \ | ||  __/|  __/| |___| |_| |
+ (_)    /_/      |_| |_____|____/ |_|   |____/|_|\_\___|_|   |_|   |_____|____/ 
+                                                                                
+
+TEST SKIPPED: This is a skipped test
+---------------------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="thisIsAPendingTest" classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" time="0">
+    <skipped/>
+    <system-err><![CDATA[14144 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: thisIsAPendingTest
+-------------------------------------------------------------------
+14144 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 3
+14144 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
+14146 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: This is a pending test
+---------------------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="thisIsAManualTest" classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" time="0">
+    <skipped/>
+    <system-err><![CDATA[14762 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: thisIsAManualTest
+-------------------------------------------------------------------
+14762 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 4
+14763 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST MANUAL
+14764 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
+14765 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: This is a manual test
+---------------------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="thisIsATestWithError" classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" time="0.459">
+    <error message="/ by zero" type="java.lang.ArithmeticException">java.lang.ArithmeticException: / by zero
+	at com.studentapp.junit.studentsidinfo.SerenityIdInfo.thisIsATestWithError(SerenityIdInfo.java:69)
+</error>
+    <system-err><![CDATA[15222 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: thisIsATestWithError
+-------------------------------------------------------------------
+15222 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 5
+]]></system-err>
+  </testcase>
+  <testcase name="fileDoesNotExist" classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" time="0.581">
+    <error message="D:\file.txt (The system cannot find the file specified)" type="java.io.FileNotFoundException"><![CDATA[java.io.FileNotFoundException: D:\file.txt (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at com.studentapp.junit.studentsidinfo.SerenityIdInfo.fileDoesNotExist(SerenityIdInfo.java:75)
+]]></error>
+    <system-err><![CDATA[15232 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: This is a test with error
+---------------------------------------------------------------------
+15232 [main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - / by zero
+15825 [main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: fileDoesNotExist
+-------------------------------------------------------------------
+15825 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 6
+]]></system-err>
+  </testcase>
+  <testcase name="getAllStudents" classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" time="0.583"/>
+</testsuite>

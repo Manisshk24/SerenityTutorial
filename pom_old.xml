@@ -1,0 +1,170 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>StudentApp_Serenity</groupId>
+  <artifactId>StudentApp_Serenity</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>StudentApp Serenity BDD Project</name>
+
+  <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <serenity.version>2.2.2</serenity.version>
+      <serenity.maven.version>2.2.2</serenity.maven.version>
+      <serenity.cucumber.version>2.2.2</serenity.cucumber.version>
+      <!-- webdriver.driver>firefox</webdriver.driver-->
+  </properties>
+
+  <!-- Define the Bintray repos for convenience -->
+	<repositories>
+		<repository>
+			<id>serenity</id>
+			<name>bintray</name>
+			<url>http://dl.bintray.com/serenity/maven</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>serenity</id>
+			<name>bintray-plugins</name>
+			<url>http://dl.bintray.com/serenity/maven</url>
+		</pluginRepository>
+	</pluginRepositories>	
+
+  <dependencies>
+  	  <!-- dependency>  
+          <groupId>com.sun</groupId> 
+          <artifactId>tools</artifactId>
+          <version>1.4.2</version>
+          <scope>system</scope>
+          <systemPath>C:/Program Files/Java/jdk1.8.0_241/lib/tools.jar</systemPath>
+      </dependency-->
+      <dependency>
+          <groupId>net.serenity-bdd</groupId>     
+          <artifactId>serenity-core</artifactId>
+          <version>${serenity.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>net.serenity-bdd</groupId>     
+          <artifactId>serenity-junit</artifactId>
+          <version>${serenity.version}</version>
+      </dependency>
+      <dependency>
+		  <groupId>net.serenity-bdd</groupId>
+		  <artifactId>serenity-rest-assured</artifactId>
+		  <version>${serenity.version}</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>net.serenity-bdd</groupId>
+		  <artifactId>serenity-cucumber5</artifactId>
+		  <version>${serenity.cucumber.version}</version>
+		</dependency>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-simple</artifactId>
+          <version>1.7.30</version>
+      </dependency>
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.13</version>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.assertj</groupId>
+          <artifactId>assertj-core</artifactId>
+          <version>3.15.0</version>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+		  <groupId>org.codehaus.groovy</groupId>
+		  <artifactId>groovy-all</artifactId>
+		  <version>2.4.7</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>com.fasterxml.jackson.core</groupId>
+		  <artifactId>jackson-databind</artifactId>
+		  <version>2.11.0</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>com.googlecode.lambdaj</groupId>
+		  <artifactId>lambdaj</artifactId>
+		  <version>2.3.3</version>
+	  </dependency>
+  </dependencies>
+  <build>
+      <plugins>
+      	  <plugin>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-surefire-plugin</artifactId>
+			  <version>2.22.2</version>
+			  <configuration>
+				  <skip>true</skip>
+			  </configuration>
+		  </plugin>
+          <plugin>
+              <artifactId>maven-failsafe-plugin</artifactId>                  
+              <version>2.22.2</version>
+              <configuration>
+					<includes>
+						<!-- include>**/studentapp/**/*.java</include-->
+						<include>**/studentapp/*.java</include>
+					</includes>
+					<forkCount>4</forkCount>
+					<reuseForks>true</reuseForks>
+					<!-- <parallel>methods</parallel>  -->
+				 	<!-- <threadCount>10</threadCount>   --> 
+					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+          </plugin>
+          <plugin>
+ 		      <groupId>org.apache.maven.plugins</groupId>
+    		  <artifactId>maven-enforcer-plugin</artifactId>
+        	  <version>1.4.1</version>
+        	  <configuration>
+            	  <rules><dependencyConvergence/></rules>
+        	  </configuration>
+    	  </plugin>
+          <plugin>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-compiler-plugin</artifactId>
+		 	  <version>3.2</version>
+			  <configuration>
+			  	  <source>1.8</source>
+				  <target>1.8</target>
+				  <fork>true</fork>
+  				  <executable>C:/Program Files/Java/jdk1.8.0_241/bin/javac</executable>
+			  </configuration>
+		  </plugin>
+          <plugin>
+              <groupId>net.serenity-bdd.maven.plugins</groupId>       
+              <artifactId>serenity-maven-plugin</artifactId>
+              <version>${serenity.maven.version}</version>
+              <dependencies>
+                   <dependency>
+                      <groupId>net.serenity-bdd</groupId>
+                      <artifactId>serenity-core</artifactId>
+                      <version>${serenity.version}</version>
+                  </dependency>
+              </dependencies>
+              <executions>
+                  <execution>
+                      <id>serenity-reports</id>
+                      <phase>post-integration-test</phase>             
+                      <goals>
+                          <goal>aggregate</goal>                       
+                      </goals>
+                  </execution>
+              </executions>
+          </plugin>
+      </plugins>
+  </build>
+</project>

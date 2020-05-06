@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="2" name="com.studentapp.junit.studentsinfo.FirstSerenityTest" skipped="4" tests="8" time="6.34" timestamp="2020-05-06 11:25:13"><testcase classname="com.studentapp.junit.studentsinfo.FirstSerenityTest" name="This is a failing test"><failure message="1 expectation failed.&#10;Expected status code &lt;500&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;200&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;200&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.studentapp.junit.studentsinfo.FirstSerenityTest.thisIsAFailingTest(FirstSerenityTest.java:47)&#13;
+</system-err></testcase><testcase classname="com.studentapp.junit.studentsinfo.FirstSerenityTest" name="This is a skipped test"><skipped/></testcase><testcase classname="com.studentapp.junit.studentsinfo.FirstSerenityTest" name="This test will get all the information from the Student App"><failure message="1 expectation failed.&#10;Expected status code &lt;500&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;200&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;200&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.studentapp.junit.studentsinfo.FirstSerenityTest.test01(FirstSerenityTest.java:94)&#13;
+</system-err></testcase><testcase classname="com.studentapp.junit.studentsinfo.FirstSerenityTest" name="This is a pending test"><skipped/></testcase><testcase classname="com.studentapp.junit.studentsinfo.FirstSerenityTest" name="This is a manual test"><skipped/></testcase><testcase classname="com.studentapp.junit.studentsinfo.FirstSerenityTest" name="This is a test with error"><error message="/ by zero" type="java.lang.ArithmeticException">/ by zero</error><system-err>/ by zero&#13;
+com.studentapp.junit.studentsinfo.FirstSerenityTest.thisIsATestWithError(FirstSerenityTest.java:70)&#13;
+</system-err></testcase><testcase classname="com.studentapp.junit.studentsinfo.FirstSerenityTest" name="File does not exist"><compromised message="D:\file.txt (The system cannot find the file specified)" type="java.io.FileNotFoundException">D:\file.txt (The system cannot find the file specified)</compromised><system-err>D:\file.txt (The system cannot find the file specified)&#13;
+com.studentapp.junit.studentsinfo.FirstSerenityTest.fileDoesNotExist(FirstSerenityTest.java:76)&#13;
+</system-err></testcase><testcase classname="com.studentapp.junit.studentsinfo.FirstSerenityTest" name="Get all students"/></testsuite>

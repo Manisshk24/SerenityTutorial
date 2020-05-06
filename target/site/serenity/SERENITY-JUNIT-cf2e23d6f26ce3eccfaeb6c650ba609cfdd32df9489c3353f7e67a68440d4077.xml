@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="1" name="com.studentapp.junit.studentsidinfo.SerenityIdInfo" skipped="4" tests="7" time="13.23" timestamp="2020-05-06 11:24:54"><testcase classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" name="This is a failing test"><failure message="1 expectation failed.&#10;Expected status code &lt;500&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;200&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;200&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.studentapp.junit.studentsidinfo.SerenityIdInfo.thisIsAFailingTest(SerenityIdInfo.java:46)&#13;
+</system-err></testcase><testcase classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" name="This is a skipped test"><skipped/></testcase><testcase classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" name="This is a pending test"><skipped/></testcase><testcase classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" name="This is a manual test"><skipped/></testcase><testcase classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" name="This is a test with error"><error message="/ by zero" type="java.lang.ArithmeticException">/ by zero</error><system-err>/ by zero&#13;
+com.studentapp.junit.studentsidinfo.SerenityIdInfo.thisIsATestWithError(SerenityIdInfo.java:69)&#13;
+</system-err></testcase><testcase classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" name="File does not exist"><compromised message="D:\file.txt (The system cannot find the file specified)" type="java.io.FileNotFoundException">D:\file.txt (The system cannot find the file specified)</compromised><system-err>D:\file.txt (The system cannot find the file specified)&#13;
+com.studentapp.junit.studentsidinfo.SerenityIdInfo.fileDoesNotExist(SerenityIdInfo.java:75)&#13;
+</system-err></testcase><testcase classname="com.studentapp.junit.studentsidinfo.SerenityIdInfo" name="Get all students"/></testsuite>
